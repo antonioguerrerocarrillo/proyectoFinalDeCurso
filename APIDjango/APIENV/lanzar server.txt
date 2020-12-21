@@ -1,0 +1,19 @@
+.\Scripts\Activate.ps1
+cd .\DJANGOAPI\
+
+lanzar server
+python .\manage.py runserver 0.0.0.0:8000
+
+crear usuario
+python .\manage.py createsuperuser
+
+actualizar bd
+python .\manage.py makemigrations
+python .\manage.py makemigrations API
+python .\manage.py migrate
+
+compilar apk
+ir a carpeta de la barberia y poner el comando
+
+expo build:android models.py
+
